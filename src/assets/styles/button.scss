@@ -1,0 +1,26 @@
+@use 'partials/mixins' as mixins;
+@use 'partials/variables' as vars;
+@use 'partials/placeholders' as placeholders;
+
+
+button {
+    &.btn1 {
+        &-primary {
+            @include mixins.button-reset(vars.$color-primary);
+        }
+        &-secondary {
+            @include mixins.button-reset(vars.$pink);
+        }
+    }
+
+    &.btn2 {
+        &-primary {
+            @extend %btn;
+            background-color: vars.$color-primary;
+        }
+        &-secondary {
+            @extend %btn;
+            background-color: vars.$color-secondary;
+        }
+    }
+}

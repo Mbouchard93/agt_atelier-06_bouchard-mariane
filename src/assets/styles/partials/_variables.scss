@@ -1,0 +1,24 @@
+
+//COLOR
+
+$rose : hotpink;
+$lightpink : #F2D8EE;
+$pink :#F2A0DC;
+
+
+$color-primary :$rose;
+$color-secondary : $lightpink;
+
+// FONT
+
+@import  url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+$sofia-sans : "Sofia Sans", sans-serif;
+
+// BREAKPOINTS
+
+$small :360px;
+$medium : 768px;
+$large : 1024px;
+
+
+$largeplus: "(min-width: #{$large})";

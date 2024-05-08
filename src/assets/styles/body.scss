@@ -1,0 +1,32 @@
+@use 'partials/variables' as var;
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/src/assets/img/bg_footer.jpg) center/cover;
+
+
+    main {
+        flex-grow: 1;
+    }
+}
+
+
+.style{
+    height: 250px;
+    margin: 30px;
+    border-radius: 30px;
+    background-color: var.$lightpink;
+    padding: 1rem;
+    h2{
+        padding: 1rem;
+    }
+}

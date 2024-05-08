@@ -1,0 +1,43 @@
+@use  'partials/variables' as var;
+
+
+header {
+    background-color: var.$color-primary;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var.$sofia-sans;
+    text-transform: uppercase;
+    font-weight: 600;
+    img {
+        &.none{
+            @media (var.$largeplus){
+                display: none;
+            }
+        }
+    }
+    nav{
+        display: none;
+        @media (var.$largeplus){
+            display: flex;
+        }
+        ul{
+            justify-content: space-between;
+            width: 550px;
+            list-style: none;
+            @media (var.$largeplus){
+                display: flex;
+            }
+            li{
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+
